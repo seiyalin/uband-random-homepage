@@ -5,14 +5,14 @@
 	display: block;  /*居中*/
 	margin: 0 auto;
 	}
-h1
+.h1
 {
 	text-align: center;
 	/*background-color: #ff4060;*/
 	font-size: 18px;
 	color: #ff4060;
 }
-p
+.p
 {
 	text-align: center;
 	font-size: 13px;
