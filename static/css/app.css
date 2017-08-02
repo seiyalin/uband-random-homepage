@@ -1,0 +1,19 @@
+.head{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: block;  /*居中*/
+	margin: 0 auto;
+	}
+h1
+{
+	text-align: center;
+	/*background-color: #ff4060;*/
+	font-size: 18px;
+	color: #ff4060;
+}
+p
+{
+	text-align: center;
+	font-size: 13px;
+}
