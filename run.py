@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello World!'
-
+  
 @app.route('/<string:student_number>/details')
 def details(student_number):
     return render_template( str(student_number) + '.html')

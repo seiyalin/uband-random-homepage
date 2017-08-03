@@ -5,14 +5,22 @@
 	display: block;  /*居中*/
 	margin: 0 auto;
 	}
+<<<<<<< HEAD
+.name_title
+=======
 .h1
+>>>>>>> 1c6142d7ee76785b862d8f7686b8262d29b03646
 {
 	text-align: center;
 	/*background-color: #ff4060;*/
 	font-size: 18px;
 	color: #ff4060;
 }
+<<<<<<< HEAD
+.descr
+=======
 .p
+>>>>>>> 1c6142d7ee76785b862d8f7686b8262d29b03646
 {
 	text-align: center;
 	font-size: 13px;
