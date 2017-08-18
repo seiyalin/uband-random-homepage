@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 
 def read_json_file(filepath):
-	file = open(filepath,'r+', encoding='utf-8')
+	file = open(filepath,'r+')
 	file_text = json.load(file)
 	return file_text
 
