@@ -1,0 +1,54 @@
+{
+	"student_number":"B17423",
+	"name":"星矢",
+	"description":"90后，金牛座，女，风风火火的行动派。",
+	"tags":"吃货,浪迹天涯",
+
+	"eating_girl":{
+		"favorate_food":"火锅,冰淇淋,烤肉", //最喜欢的食物
+		"recommend_restaurant":[
+			{
+				"name":"南京大排档",
+				"reason":"物美价廉"
+			},
+			{
+				"name":"绿茶",
+				"reason":"好吃的杭帮菜"
+			}
+		]
+	},
+
+	"travelling":[
+		{
+			"title":"普吉岛毕业游",
+			"time":"2016-5-25",
+			"description":"海滩，阳光，摩托车，青春的模样"
+		},
+		{
+			"title":"景德镇三日游",
+			"time":"2016-4-25",
+			"description":"瓷器，古镇，慢生活"
+		}
+
+	],
+
+	"study":{
+		"major":"electronic engineering",
+		"uband_courses":[
+			{
+				"name":"创意编程",
+				"tutor":"guoshushu",
+				"time":"2017-6"
+
+			},
+			{
+				"name":"精读班",
+				"tutor":"annie",
+				"time":"2017-4"
+
+			}
+		],
+		"recommend_books":"白夜行，沉默的大多数"
+	}
+
+}

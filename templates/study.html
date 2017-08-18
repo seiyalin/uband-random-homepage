@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{{data.name}}的学习记录</title>
+    <link rel="stylesheet" href="/static/lib/weui/style/weui.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/app.css">
+</head>
+<body ontouchstart>
+	<div class="details-head">
+		<div class="details-head-img-page">
+			<a href="/"><div class="back-icon"></div></a>
+			<img class="details-head-img" src="{{data.head}}">
+		</div>
+		<div class="details-head-desc-page">
+			<div class="details-head-name">
+				{{data.name}}
+			</div>
+			<div class="details-head-desc">
+				{{data.motto}}
+			</div>
+		</div>
+	</div>
+	<div class="tab-desc">
+		<a href="details"><div class="tab-list">个人简介</div></a>
+		<a href="eating"><div class="tab-list">吃货少女</div></a>
+		<a href="travelling"><div class="tab-list">旅行日志</div></a>
+		<div class="tab-list tab-active">学无止境</div>
+	</div>
+
+	<div class="content">
+        <div class="weui-panel__hd">我的友班</div>
+        <div class="weui-panel__bd">
+            {% for item in data.study.uband_courses %}
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">{{item.name}}</h4>
+
+                    <p class="weui-media-box__desc">{{item.descr}}</p>
+                    <ul class="weui-media-box__info">
+                        <li class="weui-media-box__info__meta">{{item.tutor}}</li>
+                        <li class="weui-media-box__info__meta">{{item.time}}</li>
+                        
+                    </ul>
+               </div>
+    
+            {% endfor %}  
+        </div>
+        <hr>
+        <hr>
+        <div class="weui-panel__hd">我的推荐书目</div>
+        <div class="weui-panel__bd">
+            {% for item in data.study.recommend_books %}
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">{{item.name}}</h4>
+
+                    <p class="weui-media-box__desc">{{item.reason}}</p>
+               </div>
+    
+            {% endfor %}  
+        </div>
+    </div>
+
+	<div class="weui-footer">
+        <p class="weui-footer__text weui-footer_fixed-bottom">Copyright © 2016-2018 Random</p>
+    </div>
+
+</body>
+</html>

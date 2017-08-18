@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>{{data.name}}的主页</title>
+    <link rel="stylesheet" href="static/lib/weui/style/weui.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/app.css">
+</head>
+<body ontouchstart>
+	<div class="details-head">
+		<div class="details-head-img-page">
+			<a href="/"><div class="back-icon"></div></a>
+			<img class="details-head-img" src="{{data.head}}">
+		</div>
+		<div class="details-head-desc-page">
+			<div class="details-head-name">
+				{{data.name}}
+			</div>
+			<div class="details-head-desc">
+				{{data.motto}}
+			</div>
+		</div>
+	</div>
+	<div class="tab-desc">
+		<div class="tab-list tab-active">个人简介</div>
+		<a href="eating"><div class="tab-list">吃货少女</div></a>
+		<a href="travelling"><div class="tab-list">旅行日志</div></a>
+		<a href="study"><div class="tab-list">学无止境</div></a>
+	</div>
+
+	<div class="content">
+		<div class="details-intro">
+			{{data.intros | safe}}
+		</div>
+	</div>
+
+	<div class="weui-footer">
+        <p class="weui-footer__text weui-footer_fixed-bottom">Copyright © 2016-2018 Random</p>
+    </div>
+
+</body>
+</html>

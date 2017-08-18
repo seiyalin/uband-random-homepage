@@ -19,3 +19,167 @@
 	text-align: center;
 	font-size: 13px;
 }
+
+.logo-page{
+	padding-bottom: 14px;
+    border-bottom:  solid 1px #EFEFEF;
+}
+
+.logo-page >p{
+	text-align: center;
+}
+
+.uband-logo{
+	width:80px;
+    height:33px;
+    display:block;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.weui-media-box__thumb {
+    width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.user-icon{
+	width: 68px; 
+	height: 68px; 
+	border-radius: 50%;
+}
+
+.uband-panel{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: solid 1px #EFEFEF;
+	border-radius: 6px;
+}
+
+.user-name{
+	font-size: 15px;
+}
+
+.user-desc{
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.user-label{
+	width: 50px;
+	height: 17px;
+	background-color: #ff4060;
+	border-radius: 8px;
+	font-size: 10px;
+	color: #fff;
+	padding: 3px;
+}
+
+.checkin{
+	width: 70px;
+}
+
+.checkin >p{
+	font-size: 12px;
+	margin-top: -35px;
+}
+
+/*details css*/
+.details-head{
+	width: 100%;
+	height: 186px;
+	display: block;
+	background-image: url('/static/img/details-background.jpg');
+	background-size: 100%;
+}
+
+.details-head-img-page{
+	width: 100%;
+	height: 108px;
+}
+
+.details-head-img-page >img{
+	width: 68px; 
+	height: 68px; 
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	margin-top: -16px;
+}
+.back-icon{
+	background-image: url('/static/img/back-icon.png');
+	height: 16px;
+	width: 9px;
+	display: inline-block;
+	margin-left: 15px;
+	margin-top: 15px;
+	background-size: 100%;
+}
+.details-head-desc-page{
+	width: 100%;
+	height: 78px;
+	background-color: #fff;
+	opacity: 0.5;
+}
+.details-head-name{
+	font-size: 18px;
+	text-align: center;
+	padding-top: 6px;
+}
+.details-head-desc{
+	font-size: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 8px;
+}
+
+.tab-desc{
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 24px;
+    border-bottom:  solid 1px #EFEFEF;
+}
+
+.tab-list{
+	color: #333;
+	width: 25%;
+	font-size: 12px;
+	float: left;
+}
+
+.tab-active{
+	color: #ff0000;
+}
+
+.content{
+	width: 100%;
+}
+
+.details-intro{
+	min-height: 200px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border: solid 1px #EFEFEF;
+	margin-top: 10px;
+	padding: 15px;
+}
+
+.favorite_food{
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+    border-bottom:  solid 1px #EFEFEF;
+
+}
+.favorite_food >p{
+	font-size: 18px;
+	text-align: center;
+	color: #333;
+}
+
+
