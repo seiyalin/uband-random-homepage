@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>Random的主页</title>
+    <link rel="stylesheet" href="static/lib/weui/style/weui.css">
+    <link rel="stylesheet" type="text/css" href="static/css/app.css">
+</head>
+<body ontouchstart>
+	<div class="logo-page">
+		<img class="uband-logo" src="static/img/uband-logo.png">
+		<p >uband-random-homepage</p>
+	</div>
+
+	<div>
+        <div class="weui-panel__bd">
+            {% for item in data %}
+                <a href="/{{item.student_number}}/details" class="weui-media-box weui-media-box_appmsg uband-panel">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb user-icon" src="{{item.head}}" alt="">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title user-name">{{item.name}}</h4>
+                        <p class="weui-media-box__desc user-desc">{{item.motto}}</p>
+                        <p>
+                            {%for label in item.tags%}
+                            <label class="user-label">{{label}}</label>
+                            {% endfor %}
+                        </p>
+                    </div>
+                    <div class="checkin">
+                        <p>打卡数：{{item.checkin}}</p>
+                    </div>
+                </a>
+            {% endfor %}  
+        </div>
+    </div>
+    <div class="weui-footer">
+        <p class="weui-footer__text weui-footer_fixed-bottom">Copyright © 2016-2018 Random</p>
+    </div>
+
+   <!--  <a href="" class="weui-btn weui-btn_primary">按钮</a> -->
+</body>
+</html>
